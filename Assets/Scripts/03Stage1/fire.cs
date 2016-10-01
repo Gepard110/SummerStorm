@@ -9,11 +9,11 @@ public class fire : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position += transform.forward * 0.07f;
+		transform.position += transform.forward * 0.05f;
 	}
 
 	IEnumerator hogehoge(){
-		yield return new WaitForSeconds(2.5f);
+		yield return new WaitForSeconds(2f);
 		Destroy(this.gameObject);
 	}
 }
